@@ -2,16 +2,45 @@ package net.pi.hackaton.core.model;
 
 import java.util.List;
 
-/**
- * Created by msomolinos on 14/12/16.
- */
 public class RequestHousing {
 
-    private Double price;
+    private Double budget;
 
-    private List<CrimeRate> crimeRateList;
+    private List<String> crimeRate;
 
-    private List<NumBeds> numBedsList;
+    private List<String> bedrooms;
 
-    private List<Region> regionList;
+    private List<String> regions;
+
+    public Double getBudget() {
+        return budget;
+    }
+
+    public void setBudget(Double budget) {
+        this.budget = budget;
+    }
+
+    public List<String> getCrimeRate() {
+        return crimeRate;
+    }
+
+    public void setCrimeRate(List<String> crimeRate) {
+        this.crimeRate = crimeRate;
+    }
+
+    public List<String> getBedrooms() {
+        return bedrooms;
+    }
+
+    public void setBedrooms(List<String> bedrooms) {
+        this.bedrooms = bedrooms;
+    }
+
+    public List<String> getRegions() {
+        return regions;
+    }
+
+    public void setRegions(List<String> regions) {
+        this.regions = regions;
+    }
 }
