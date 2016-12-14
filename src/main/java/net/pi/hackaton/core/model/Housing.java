@@ -1,11 +1,11 @@
 package net.pi.hackaton.core.model;
 
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Housing {
     private String id;
     private Region region;
+    private Double longitude;
+    private Double latitude;
     private NumBeds numBeds;
     private Integer year;
     private Double price;
@@ -28,6 +28,22 @@ public class Housing {
 
     public void setRegion(Region region) {
         this.region = region;
+    }
+
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
     }
 
     public NumBeds getNumBeds() {
