@@ -80,12 +80,15 @@ public class Housing {
 
     @Override
     public String toString() {
-        return (new ToStringBuilder(this))
-                .append("id", id)
-                .append("region", region)
-                .append("numBeds", numBeds.toString())
-                .append("crimeRate", crimeRate)
-                .append("year", year)
-                .append("price", price).build();
+        return "Housing{" +
+          "id='" + id + '\'' +
+          ", region=" + region +
+          ", longitude=" + longitude +
+          ", latitude=" + latitude +
+          ", numBeds=" + numBeds +
+          ", year=" + year +
+          ", price=" + price +
+          ", crimeRate=" + crimeRate +
+          '}';
     }
 }
